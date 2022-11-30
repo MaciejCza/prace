@@ -34,118 +34,138 @@ class _CalculatorState extends State<Calculator> {
                   child:
           Container(height:100,child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50)),onPressed:(){
+              Container(color: Colors.black,child:
+              TextButton(style:TextButton.styleFrom(textStyle: TextStyle(fontSize: 50),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   query="";
                 });
-              },child:Text('C')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50)),onPressed:(){
+              },child:Text('C'))),
+              Container(color:Colors.black,child:
+              OutlinedButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   answer="";
                 });
-              },child:Text('DEL')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50)),onPressed:(){
+              },child:Text('DEL'))),
+              Container(color:Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   query+='%';
                 });
-              },child:Text('%')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50)),onPressed:(){
+              },child:Text('%'))),
+              Container(color:Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   query+='/';
                 });
-              },child:Text('/')),
+              },child:Text('/'))),
             ],),),),
           Container(height:100,child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40)),onPressed:(){
+              Container(color:Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
                 setState(() {
                   query+='7';
                 });
-              },child:Text('7')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40)),onPressed:(){
+              },child:Text('7'))),
+              Container(color:Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
                 setState(() {
                   query+='8';
                 });
-              },child:Text('8')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40)),onPressed:(){
+              },child:Text('8'))),
+              Container(color:Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
                 setState(() {
                   query+='9';
                 });
-              },child:Text('9')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50)),onPressed:(){
+              },child:Text('9'))),
+              Container(color: Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50),side: BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   query+='*';
                 });
-              },child:Text('x')),
+              },child:Text('x'))),
             ],),),
           Container(height:100,child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40)),onPressed:(){
+              Container(color:Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
                 setState(() {
                   query+='4';
                 });
-              },child:Text('4')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40)),onPressed:(){
+              },child:Text('4'))),
+              Container(color:Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
                 setState(() {
                   query+='5';
                 });
-              },child:Text('5')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40)),onPressed:(){
+              },child:Text('5'))),
+              Container(color: Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
                 setState(() {
                   query+='6';
                 });
-              },child:Text('6')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50)),onPressed:(){
+              },child:Text('6'))),
+              Container(color: Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50),side: BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   query+='-';
                 });
-              },child:Text('-')),
+              },child:Text('-'))),
             ],),),
           Container(height:100,child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40)),onPressed:(){
+              Container(color: Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
                 setState(() {
                   query+='1';
                 });
-              },child:Text('1')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40)),onPressed:(){
+              },child:Text('1'))),
+              Container(color: Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
                 setState(() {
                   query+='2';
                 });
-              },child:Text('2')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40)),onPressed:(){
+              },child:Text('2'))),
+              Container(color: Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
                 setState(() {
                   query+='3';
                 });
-              },child:Text('3')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50)),onPressed:(){
+              },child:Text('3'))),
+              Container(color: Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50),side: BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   query+='+';
                 });
-              },child:Text('+')),
+              },child:Text('+'))),
             ],),),
           Container(height:100,child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40)),onPressed:(){
+              Container(color: Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
                 setState(() {
                   query+='0';
                 });
-              },child:Text('0')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40)),onPressed:(){
+              },child:Text('0'))),
+              Container(color: Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
                 setState(() {
                   query+='00';
                 });
-              },child:Text('00')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40)),onPressed:(){
+              },child:Text('00'))),
+              Container(color: Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
                 setState(() {
                   query+=',';
                 });
-              },child:Text(',')),
-              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50)),onPressed:(){
+              },child:Text(','))),
+              Container(color: Colors.black,child:
+              TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50),side: BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   calculate();
                 });
-              },child:Text('=')),
+              },child:Text('='))),
             ],),),
         ],
       ),)

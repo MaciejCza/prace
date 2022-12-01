@@ -10,26 +10,27 @@ class Calculator extends StatefulWidget {
 class _CalculatorState extends State<Calculator> {
   @override
   Widget build(BuildContext context) {
+    var deviceSize = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         title: Text('Calculator',
         style: TextStyle(color:Colors.black87,))
       ),
-      body: Container(alignment: Alignment.center,decoration: const BoxDecoration(image: DecorationImage(image: NetworkImage('https://cdn.discordapp.com/attachments/713289893278908421/1047440974877569024/gfv.jpg'))),child:Column(
+      body: Container(height: deviceSize.height,width: deviceSize.width,alignment: Alignment.center,decoration: const BoxDecoration(image: DecorationImage(image: NetworkImage('https://cdn.discordapp.com/attachments/713289893278908421/1047440974877569024/gfv.jpg'))),child:Column(
         children: [
           Container(alignment:Alignment.centerRight,color:Colors.black,child:
             Column(children:[
-              Text(query,style:TextStyle(fontSize:40,color: Colors.grey)),
+              Text(query,style:TextStyle(fontSize:40,color: Colors.grey),maxLines: 1),
 
             ],),),
             Container(color:Colors.white,height: 2),
-            Container(alignment:Alignment.centerRight,color:Colors.black,child:
+            Container(height: 140,alignment:Alignment.centerRight,color:Colors.black,child:
               Column(children: [
-                Text(answer,style:TextStyle(fontSize:60,color: Colors.deepOrangeAccent)),
+                Text(answer,style:TextStyle(fontSize:60,color: Colors.deepOrangeAccent),maxLines: 2),
               ],)
             ),
 
-            SizedBox(height: 54),
+
             Container(alignment:Alignment.bottomCenter,
                   child:
           Container(height:100,child:
@@ -40,7 +41,7 @@ class _CalculatorState extends State<Calculator> {
                   query="";
                 });
               },child:Text('C'))),
-              Container(color:Colors.black,child:
+              Container(height: 74,color:Colors.black,child:
               OutlinedButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 50),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   answer="";

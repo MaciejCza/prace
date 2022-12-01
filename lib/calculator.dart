@@ -16,7 +16,7 @@ class _CalculatorState extends State<Calculator> {
         title: Text('Calculator',
         style: TextStyle(color:Colors.black87,))
       ),
-      body: Container(height: deviceSize.height,width: deviceSize.width,alignment: Alignment.center,decoration: const BoxDecoration(image: DecorationImage(image: NetworkImage('https://cdn.discordapp.com/attachments/713289893278908421/1047440974877569024/gfv.jpg'))),child:Column(
+      body: Container(height: deviceSize.height,width: deviceSize.width,alignment: Alignment.center,decoration: const BoxDecoration(),child:Column(
         children: [
           Container(alignment:Alignment.centerRight,color:Colors.black,child:
             Column(children:[
@@ -33,7 +33,7 @@ class _CalculatorState extends State<Calculator> {
 
             Container(padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),alignment:Alignment.bottomCenter,
                   child:
-          Container(padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),height:100,child:
+          Container(padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),height:100,child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
               Container(width: 80,color: Colors.black,child:
               TextButton(style:TextButton.styleFrom(foregroundColor:Colors.greenAccent ,textStyle: TextStyle(fontSize: 50),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
@@ -60,7 +60,7 @@ class _CalculatorState extends State<Calculator> {
                 });
               },child:Text('/'))),
             ],),),),
-          Container(padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),height:100,child:
+          Container(padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),height:100,child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
               Container(width: 80,height: 75,color:Colors.black,child:
               TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
@@ -87,7 +87,7 @@ class _CalculatorState extends State<Calculator> {
                 });
               },child:Text('x'))),
             ],),),
-          Container(padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),height:100,child:
+          Container(padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),height:100,child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
               Container(width: 80,height: 75,color:Colors.black,child:
               TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
@@ -114,7 +114,7 @@ class _CalculatorState extends State<Calculator> {
                 });
               },child:Text('-'))),
             ],),),
-          Container(padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),height:100,child:
+          Container(padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),height:100,child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
               Container(width: 80,height: 75,color: Colors.black,child:
               TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){
@@ -141,7 +141,7 @@ class _CalculatorState extends State<Calculator> {
                 });
               },child:Text('+'))),
             ],),),
-          Container(padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),height:100,child:
+          Container(padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),height:100,child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
               Container(width: 80,height: 75,color: Colors.black,child:
               TextButton(style: TextButton.styleFrom(textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.yellowAccent)),onPressed:(){

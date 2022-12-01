@@ -35,26 +35,26 @@ class _CalculatorState extends State<Calculator> {
                   child:
           Container(padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),height:100,child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
-              Container(width: 80,color: Colors.black,child:
-              TextButton(style:TextButton.styleFrom(foregroundColor:Colors.greenAccent ,textStyle: TextStyle(fontSize: 50),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
+              Container(width: 80,height: 75,color: Colors.black,child:
+              TextButton(style:TextButton.styleFrom(foregroundColor:Colors.greenAccent ,textStyle: TextStyle(fontSize: 40),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   query="";
                 });
               },child:Text('C'))),
               Container(width: 80,height: 74,color:Colors.black,child:
-              OutlinedButton(style: TextButton.styleFrom(foregroundColor:Colors.blueAccent ,textStyle: TextStyle(fontSize: 50),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
+              OutlinedButton(style: TextButton.styleFrom(foregroundColor:Colors.blueAccent ,textStyle: TextStyle(fontSize: 40),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   answer="";
                 });
               },child:Text('D'))),
-              Container(width: 80,color:Colors.black,child:
-              TextButton(style: TextButton.styleFrom(foregroundColor:Colors.blueGrey ,textStyle: TextStyle(fontSize: 50),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
+              Container(width: 80,height: 75,color:Colors.black,child:
+              TextButton(style: TextButton.styleFrom(foregroundColor:Colors.blueGrey ,textStyle: TextStyle(fontSize: 40),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   query+='%';
                 });
               },child:Text('%'))),
-              Container(width: 80,color:Colors.black,child:
-              TextButton(style: TextButton.styleFrom(foregroundColor:Colors.blueGrey ,textStyle: TextStyle(fontSize: 50),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
+              Container(width: 80,height: 75,color:Colors.black,child:
+              TextButton(style: TextButton.styleFrom(foregroundColor:Colors.blueGrey ,textStyle: TextStyle(fontSize: 40),side:BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   query+='/';
                 });
@@ -81,7 +81,7 @@ class _CalculatorState extends State<Calculator> {
                 });
               },child:Text('9'))),
               Container(width: 80,height: 75,color: Colors.black,child:
-              TextButton(style: TextButton.styleFrom(foregroundColor:Colors.blueGrey ,textStyle: TextStyle(fontSize: 50),side: BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
+              TextButton(style: TextButton.styleFrom(foregroundColor:Colors.blueGrey ,textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   query+='*';
                 });
@@ -135,7 +135,7 @@ class _CalculatorState extends State<Calculator> {
                 });
               },child:Text('3'))),
               Container(width: 80,height: 75,color: Colors.black,child:
-              TextButton(style: TextButton.styleFrom(foregroundColor:Colors.blueGrey ,textStyle: TextStyle(fontSize: 50),side: BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
+              TextButton(style: TextButton.styleFrom(foregroundColor:Colors.blueGrey ,textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   query+='+';
                 });
@@ -162,7 +162,7 @@ class _CalculatorState extends State<Calculator> {
                 });
               },child:Text(','))),
               Container(width: 80,height: 75,color: Colors.black,child:
-              TextButton(style: TextButton.styleFrom(foregroundColor:Colors.blueGrey ,textStyle: TextStyle(fontSize: 50),side: BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
+              TextButton(style: TextButton.styleFrom(foregroundColor:Colors.blueGrey ,textStyle: TextStyle(fontSize: 40),side: BorderSide(width: 5,color: Colors.blueGrey)),onPressed:(){
                 setState(() {
                   calculate();
                 });

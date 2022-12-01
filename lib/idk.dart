@@ -9,5 +9,5 @@ void calculate(){
   ContextModel cm = ContextModel();
   double eval = exp.evaluate(EvaluationType.REAL, cm);
 
-  answer = eval.toString();
+  answer = eval.toStringAsFixed(2);
 }

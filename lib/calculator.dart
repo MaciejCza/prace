@@ -12,11 +12,8 @@ class _CalculatorState extends State<Calculator> {
   Widget build(BuildContext context) {
     var deviceSize = MediaQuery.of(context).size;
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Calculator',
-        style: TextStyle(color:Colors.black87,))
-      ),
-      body: Container(height: deviceSize.height,width: deviceSize.width,alignment: Alignment.center,decoration: const BoxDecoration(),child:Column(
+      body: SafeArea(child:
+          Container(height: deviceSize.height,width: deviceSize.width,alignment: Alignment.center,decoration: const BoxDecoration(),child:Column(
         children: [
           Container(alignment:Alignment.centerRight,color:Colors.black,child:
             Column(children:[
@@ -170,6 +167,6 @@ class _CalculatorState extends State<Calculator> {
             ],),),
         ],
       ),)
-    );
+    ));
   }
 }
